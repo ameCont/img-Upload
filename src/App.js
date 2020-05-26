@@ -30,7 +30,11 @@ class App extends Component {
   fileUploadHandler = () => {
      const fd = new FormData();
      fd.append('image', this.state.selectedFile, this.state.selectedFile.name);
-     axios.post('/uploadFile', fd)
+     axios.post('/uploadFile', fd, {
+       onUploadProgress: progressEvent => {
+         console.log('Upload Progress: '+ Math.round(progressEvent.loaded / progressEvent.total * 100) + '%')
+       }
+     })
      .then(res => {
        console.log(res);
      });
