@@ -2,6 +2,7 @@
   "name": "imgupload",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://us-central1-upload-img-f9afa.cloudfunctions.net",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
