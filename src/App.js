@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import './App.css';
 import axios from 'axios';
 
-/*
+
 var express = require('express');
 var app = express();
 app.use(function(req, res, next) {
@@ -11,7 +11,7 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
-*/
+
 
 class App extends Component {
   state = {
